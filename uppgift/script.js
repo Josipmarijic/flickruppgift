@@ -6,6 +6,7 @@ btn.addEventListener( 'click', function(){
     console.log(input.value);
 
     clearImages(); 
+    document.getElementsByTagName("h1").innerText = "";
 
     const url = `https://www.flickr.com/services/rest/?api_key=${KEY}&method=flickr.photos.search&text=${input.value}&format=json&nojsoncallback=1&per_page=1&page=1&safe_search=1`;
     
